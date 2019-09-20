@@ -20,6 +20,8 @@ public class App {
         car.setMileage(5);
         car.setRunning(true);
 
+        System.out.println(car);
+
 //        double distance - stores the result in the variable "distance"
         double distance = car.accelerate(60);
 
@@ -63,5 +65,7 @@ public class App {
 
         System.out.println("Total Vehicle Count: " + Vehicle.getTotalVehicleCount());
 
+        Cheater cheater = new Cheater();
+        cheater.accelerate(60, 1);
     }
 }

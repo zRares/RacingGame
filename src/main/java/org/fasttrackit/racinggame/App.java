@@ -5,7 +5,11 @@ import org.fasttrackit.racinggame.Car;
 
 public class App {
     public static void main(String[] args) {
-        Car car = new Car();
+        Engine engine = new Engine();
+        engine.manufacturer = "Bavaria.Motors";
+        engine.cubicCentimeters = 3000;
+
+        Car car = new Car(engine);
         car.name = "BMW";
         car.color = "grey";
         car.doorCount = 4;
@@ -16,9 +20,7 @@ public class App {
 //        double distance - stores the result in the variable "distance"
         double distance = car.accelerate(60, 1);
 
-        Engine engine = new Engine();
-        engine.manufacturer = "Bavaria.Motors";
-        engine.cubicCentimeters = 3000;
+
 
         car.engine = engine;
 
@@ -37,7 +39,7 @@ public class App {
 
         System.out.println("Car1: " + car.name);
 
-        Car car2 = new Car();
+        Car car2 = new Car(new Engine());
         car2.name = "KIA";
 
         System.out.println("Car2: " + car2.name);

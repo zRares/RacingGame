@@ -1,5 +1,7 @@
 package org.fasttrackit.racinggame;
 
+import java.time.LocalDate;
+
 public class Vehicle {
 
     private static int totalVehicleCount;
@@ -14,6 +16,11 @@ public class Vehicle {
 
     public Vehicle() {
         totalVehicleCount ++;
+    }
+//Method Overloading
+
+    public double accelerate(double speed) {
+        return accelerate(speed, 1);
     }
 
     public double accelerate(double speed, double durationInHours) {
@@ -99,5 +106,6 @@ public class Vehicle {
 
     public static int getTotalVehicleCount() {
         return totalVehicleCount;
+
     }
 }

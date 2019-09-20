@@ -3,6 +3,9 @@ package org.fasttrackit.racinggame;
 
 import org.fasttrackit.racinggame.Car;
 
+import javax.swing.undo.AbstractUndoableEdit;
+import java.time.LocalDate;
+
 public class App {
     public static void main(String[] args) {
         Engine engine = new Engine();
@@ -18,7 +21,7 @@ public class App {
         car.setRunning(true);
 
 //        double distance - stores the result in the variable "distance"
-        double distance = car.accelerate(60, 1);
+        double distance = car.accelerate(60);
 
 
 

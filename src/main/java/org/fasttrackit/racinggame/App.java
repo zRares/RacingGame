@@ -10,12 +10,12 @@ public class App {
         engine.cubicCentimeters = 3000;
 
         Car car = new Car(engine);
-        car.name = "BMW";
-        car.color = "grey";
+        car.setName("BMW");
+        car.setColor("grey");
         car.doorCount = 4;
-        car.maxSpeed = 240;
-        car.mileage = 10.5;
-        car.running = true;
+        car.setMaxSpeed(240);
+        car.setMileage(5);
+        car.setRunning(true);
 
 //        double distance - stores the result in the variable "distance"
         double distance = car.accelerate(60, 1);
@@ -37,14 +37,14 @@ public class App {
         System.out.println("Engine: " + engine.manufacturer);
 
 
-        System.out.println("Car1: " + car.name);
+        System.out.println("Car1: " + car.getName());
 
         Car car2 = new Car(new Engine());
-        car2.name = "KIA";
+        car2.setName("KIA");
 
-        System.out.println("Car2: " + car2.name);
-        System.out.println(car2.color);
+        System.out.println("Car2: " + car2.getName());
+        System.out.println(car2.getColor());
         System.out.println(car2.doorCount);
-        System.out.println(car2.running);
+        System.out.println(car2.isRunning());
     }
 }

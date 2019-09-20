@@ -2,13 +2,13 @@ package org.fasttrackit.racinggame;
 
 public class Vehicle {
 
-    String name;
-    String color;
-    double mileage;
-    double maxSpeed;
-    boolean running;
-    double fuelLevel;
-    double totalTraveledDistance;
+   private String name;
+   private String color;
+   private double mileage;
+   private double maxSpeed;
+   private boolean running;
+   private double fuelLevel;
+   private double totalTraveledDistance;
 
     public double accelerate(double speed, double durationInHours) {
         System.out.println(name + " is accelerating with : " + speed + " for " + durationInHours + "h.");
@@ -33,5 +33,61 @@ public class Vehicle {
         System.out.println("Total traveled distance: " + totalTraveledDistance);
 
         return traveledDistance;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name.trim();
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public double getMileage() {
+        return mileage;
+    }
+
+    public void setMileage(double mileage) {
+        this.mileage = mileage;
+    }
+
+    public double getMaxSpeed() {
+        return maxSpeed;
+    }
+
+    public void setMaxSpeed(double maxSpeed) {
+        this.maxSpeed = maxSpeed;
+    }
+
+    public boolean isRunning() {
+        return running;
+    }
+
+    public void setRunning(boolean running) {
+        this.running = running;
+    }
+
+    public double getFuelLevel() {
+        return fuelLevel;
+    }
+
+    public void setFuelLevel(double fuelLevel) {
+        this.fuelLevel = fuelLevel;
+    }
+
+    public double getTotalTraveledDistance() {
+        return totalTraveledDistance;
+    }
+
+    public void setTotalTraveledDistance(double totalTraveledDistance) {
+        this.totalTraveledDistance = totalTraveledDistance;
     }
 }

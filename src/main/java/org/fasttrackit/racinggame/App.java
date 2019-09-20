@@ -46,5 +46,19 @@ public class App {
         System.out.println(car2.getColor());
         System.out.println(car2.doorCount);
         System.out.println(car2.isRunning());
+
+//        System.out.println("Static variables demo: ");
+//
+//        car.totalVehicleCount = 10;
+//
+//        System.out.println("Value from car: " + car.totalVehicleCount);
+//
+//        car2.totalVehicleCount = 20;
+//
+//        System.out.println("Value from car: " + car.totalVehicleCount);
+//        System.out.println("Value from car2: " + car2.totalVehicleCount);
+
+        System.out.println("Total Vehicle Count: " + Vehicle.getTotalVehicleCount());
+
     }
 }

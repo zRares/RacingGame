@@ -15,7 +15,7 @@ public class Vehicle {
     private double totalTraveledDistance;
 
     public Vehicle() {
-        totalVehicleCount ++;
+        totalVehicleCount++;
     }
 //Method Overloading
 
@@ -46,6 +46,11 @@ public class Vehicle {
         System.out.println("Total traveled distance: " + totalTraveledDistance);
 
         return traveledDistance;
+    }
+
+    // co-variant return type
+    protected Vehicle clone() {
+        return new Vehicle();
     }
 
     public String getName() {

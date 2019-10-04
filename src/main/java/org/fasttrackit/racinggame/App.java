@@ -65,7 +65,21 @@ public class App {
 
         System.out.println("Total Vehicle Count: " + Vehicle.getTotalVehicleCount());
 
-        Cheater cheater = new Cheater();
+
+        //method implementation taken from object type
+
+        Vehicle cheater = new Cheater();
         cheater.accelerate(60, 1);
+
+        // exposed methods taken from variable type, not from object type
+        // cheater.win();
+
+        // type casting
+        ((Cheater) cheater).win();
+
+        Mechanic mechanic = new Mechanic();
+        mechanic.repair(cheater);
+        mechanic.repair(new Car(new Engine()));
+
     }
 }

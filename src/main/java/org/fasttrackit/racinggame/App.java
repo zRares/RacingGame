@@ -11,9 +11,9 @@ public class App {
         Game game = new Game();
         game.start();
 
-//        Engine engine = new Engine();
-//        engine.manufacturer = "Bavaria.Motors";
-//        engine.cubicCentimeters = 3000;
+        Engine engine = new Engine();
+        engine.manufacturer = "Bavaria.Motors";
+        engine.cubicCentimeters = 3000;
 //
 //        Car car = new Car(engine);
 //        car.setName("BMW");
